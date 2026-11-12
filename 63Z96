@@ -1,0 +1,110 @@
+# For Stage
+# For Game
+# Initialize
+clearAllModel
+setGridDisp 0
+setDefaultSceneParameter 
+setEnvironmentParameter shadowSettingScapes.isScapes 1
+# Load models
+loadModel bg.mdl%BGPlane BG      true false
+loadModel bg.mdl%Objects  Objects  true  true
+loadModel bg.mdl%Objects2 Objects2 true  false
+loadModel bg.mdl%Objects3 Objects3 false true
+loadModel bg.mdl%Objects4 Objects4 false false
+setEntityRenderingConfig BG raytrace=false
+setEntityRenderingConfig Objects2 raytrace=false
+setEntityRenderingConfig Objects4 raytrace=false
+
+loadTextureFromGroupedImage image.grp compressedImage
+attachTexture compressedImage BG
+attachTexture compressedImage Objects
+attachTexture compressedImage Objects2
+attachTexture compressedImage Objects3
+attachTexture compressedImage Objects4
+# Load Runway
+loadRunway floor.runway
+# View Camera Settings
+setCameraPosition -0.1888207 4.122807 -13.64823
+setCameraLookAt -0.1676042 4.073101 -12.64969
+setCameraUp -0.006569833 0.998732 0.04985612
+setPerspective 36.72659 0.6675978 0.1 2000
+# ENV Settings
+loadTexture specular_env.txs specular_envmap_no_reflect
+loadTexture diffuse_env.txs diffuse_envmap
+
+# input color space: rec2020
+# image size (8192 x 4096)
+# white balance correction: srcTemp = 7704.000000, srcDeltaUV = 0.008000, dstTemp = 6504.000000, dstDeltaUV = 0.000000
+# light intensity = 15.702459 (2006, 1912)
+# thres = 18.711428
+
+# commands:
+setAmbientCubeXp 0.129324 0.175278 0.236443
+setAmbientCubeXm 0.177911 0.228164 0.275577
+setAmbientCubeYp 0.237861 0.352732 0.486403
+setAmbientCubeYm 0.026690 0.033659 0.046488
+setAmbientCubeZp 0.284112 0.301102 0.331411
+setAmbientCubeZm 0.097148 0.154413 0.226878
+setLightSHCoefficient 0 0.180569 0.233166 0.299294
+setLightSHCoefficient 1 -0.103179 -0.155900 -0.214944
+setLightSHCoefficient 2 0.091351 0.071673 0.051075
+setLightSHCoefficient 3 0.023739 0.025840 0.019121
+setLightSHCoefficient 4 -0.012817 -0.014143 -0.009954
+setLightSHCoefficient 5 -0.068357 -0.057725 -0.038889
+setLightSHCoefficient 6 0.066353 0.043342 0.027544
+setLightSHCoefficient 7 0.001906 0.000457 0.002654
+setLightSHCoefficient 8 0.028670 0.016152 -0.005014
+setLightSHCoefficient 9 -0.048622 -0.062751 -0.066858
+setLightSHCoefficient 10 -0.002896 -0.001427 -0.006315
+setLightSHCoefficient 11 -0.080410 -0.083331 -0.085809
+setLightSHCoefficient 12 0.043928 0.027008 0.023200
+setLightSHCoefficient 13 -0.001889 -0.000096 0.004554
+setLightSHCoefficient 14 -0.005655 -0.009359 -0.005740
+setLightSHCoefficient 15 0.016045 0.016773 0.012391
+setMaxIntensity 15.702459
+setLightDir 0.994049 0.104122 -0.032033
+setLightBlurriness 0.000000
+# setLightRotate -5.976563 91.845698
+setLightDiffuse  0.000000 0.000000 0.000000
+setLightSpecular  0.000000 0.000000 0.000000
+
+# making cubemap...
+# generate mipmaps.
+# output D:\build\distrun\yoshino/gt7/scapes/scapes_2953/ps5/bg_env_709.dds..
+# output D:\build\distrun\yoshino/gt7/scapes/scapes_2953/ps5/bg_env.dds..
+# making cubemap...
+# generate mipmaps.
+# diffuse map: w 32, ln2tw 8.000000, bias 4.825748
+# done.
+# filtering: curve 1.000000, eta 1.000000, tw 256, ln2tw 8.000000, bias 5.825748
+# lv0 (256x256) roughness = 0.001000, alpha = 0.000001, bias 5.825748
+# lv1 (128x128) roughness = 0.111111, alpha = 0.012346, bias 5.825638
+# lv2 (64x64) roughness = 0.222222, alpha = 0.049383, bias 5.823991
+# lv3 (32x32) roughness = 0.333333, alpha = 0.111111, bias 5.816897
+# lv4 (16x16) roughness = 0.444444, alpha = 0.197531, bias 5.798138
+# lv5 (8x8) roughness = 0.555556, alpha = 0.308642, bias 5.760112
+# lv6 (4x4) roughness = 0.666667, alpha = 0.444444, bias 5.695717
+# lv7 (2x2) roughness = 0.777778, alpha = 0.604938, bias 5.600796
+# lv8 (1x1) roughness = 0.888889, alpha = 0.790123, bias 5.475842
+# done.
+# filtering: curve 1.000000, eta 1.500000, tw 256, ln2tw 8.000000, bias 6.410710
+# lv0 (256x256) roughness = 0.001000, alpha = 0.000001, bias 6.410710
+# lv1 (128x128) roughness = 0.111111, alpha = 0.012346, bias 6.409957
+# lv2 (64x64) roughness = 0.222222, alpha = 0.049383, bias 6.398753
+# lv3 (32x32) roughness = 0.333333, alpha = 0.111111, bias 6.352117
+# lv4 (16x16) roughness = 0.444444, alpha = 0.197531, bias 6.239754
+setEmissionScale 2 1 1 1
+setEnvironmentParameter light.worldLight.IBLScale 164.044181554613
+
+setGain 0.00656950324416964
+setColorTemp 6504 0 6504
+setMirrorRenderRate 1
+
+# Image Based Fog Settings
+loadTexture ibf.txs ibf
+setStaticImageBasedFogTexture ibf 0 
+setEffectParameter imageBasedFogStatic.enable 1
+
+enableScapesMode 1
+setWorldPassAsForwardPass 1
+enableShadowCastsOnlyOnNonWorld 1

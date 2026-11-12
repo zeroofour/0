@@ -1,0 +1,403 @@
+clearStage
+setDefaultSceneParameter
+setEnvironmentParameter stage.lodMode 2
+setCameraMotionEnable 1
+setGridDisp false
+setMirrorMode false
+enableGlobalShadows 16
+setGlobalMotionSpeed 1.000
+setCarBufferDetail 1 0
+activateWeatherSystem
+setupSyntheticSkyWithPreset
+setWeatherInitializeParameter default
+setWeatherInitializeParameter mainWeatherPreset 0.0 SuF0
+setEnvironmentParameter syntheticSkySetting.stageControl.enableCloud 0
+initializeWeatherSystem
+setLightEnvSetupAutoPause 1
+loadCar _default0 car0 true false
+loadDefaultDriver 0 false car0 false
+createEntity Detail_DummyTarget
+createEntity DummyTarget
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%chalkboard chalkboard true true
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%flower_vase flower_vase true true
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%inside inside true true
+setForceRayTracingSpecular true inside
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%right_tree right_tree true true
+setEntityRenderingConfig right_tree raytrace=0
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%espresso espresso true true
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%table_prop_smooth table_prop_smooth true true
+setForceRayTracingSpecular true table_prop_smooth
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%branch_morus_hi branch_morus_hi false true
+setEntityRenderingConfig branch_morus_hi raytrace=0
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%tree_chestnut tree_chestnut true true
+setEntityRenderingConfig tree_chestnut raytrace=0
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%weed_a weed_a true true
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%weed_b weed_b true true
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%weed_c weed_c true true
+setEntityRenderingConfig weed_c raytrace=0
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%rocks rocks true true
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%tree tree true true
+setEntityRenderingConfig tree raytrace=0
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%grass grass true true
+setEntityRenderingConfig grass raytrace=0
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%env env false true
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%far far true true
+setEntityRenderingConfig far raytrace=0
+setTranslation -0.007 1.442 -0.003 far
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%Forest_Shadow Forest_Shadow true true
+setEntityRenderingConfig Forest_Shadow raytrace=0
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%sq_table sq_table true true
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%brunch_hi_stringlights brunch_hi_stringlights false true
+setEntityRenderingConfig brunch_hi_stringlights raytrace=0
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%ground_fix ground_fix true true
+loadModel //stage/GrandTop/Cafe_store/windows.mdl windows true true vfx
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%facade facade true true
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%string_lights string_lights true false
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%christmas_flower christmas_flower false true
+setEntityRenderingConfig christmas_flower raytrace=0
+setVisible false christmas_flower
+loadModel //stage/GrandTop/Cafe_store/Cafe_store.mdl%lightbulb lightbulb true true
+loadLayoutInstance tree_instance.bin tree_instance.mdl tree_instance true true
+setEntityRenderingConfig tree_instance raytrace=0
+loadModel championship_03_B_nTM.mdl Trophy_Model true true
+setEntityRenderingConfig Trophy_Model lightprobe=1
+setModelLightProbeGroup __all TrophyProbe Trophy_Model
+createLightProbe 0.0 1.0 0.0 root drippot_probe
+setTranslation 10.103 1.462 46.802 drippot_probe
+setLightProbeKind hires drippot_probe
+setLightProbeZone 10.000 2.161 46.211 10.400 2.800 5.100 0.000 13.500 0.000 drippot_probe
+createLightProbe 0.0 1.0 0.0 root inside_main_low
+setTranslation 6.331 1.888 46.334 inside_main_low
+setLightProbeZone 8.150 1.665 46.211 10.400 2.800 5.100 0.000 13.500 0.000 inside_main_low
+createLightProbe 0.0 1.0 0.0 glass_ent probe_outside_glass_ent
+setTranslation 14.418 1.631 43.704 probe_outside_glass_ent
+setLightProbeKind hires probe_outside_glass_ent
+setLightProbeZone 17.900 1.550 42.000 9.700 2.400 1.580 0.000 13.500 0.000 probe_outside_glass_ent
+createLightProbe 0.0 1.0 0.0 p_inside_glass_ent probe_inside_glass_ent
+setTranslation 14.900 1.824 44.229 probe_inside_glass_ent
+setLightProbeKind hires probe_inside_glass_ent
+createLightProbe 0.0 1.0 0.0 glass_ex probe_outside_win_ex
+setTranslation 3.586 1.808 37.260 probe_outside_win_ex
+setLightProbeKind hires probe_outside_win_ex
+createLightProbe 0.0 1.0 0.0 probe_outside_win_patio probe_outside_win_p
+setTranslation 10.219 1.639 41.205 probe_outside_win_p
+setLightProbeKind hires probe_outside_win_p
+setLightProbeZone 12.800 4.563 39.661 12.787 8.665 4.950 0.000 13.500 0.000 probe_outside_win_p
+createLightProbe 0.0 1.0 0.0 insidewindowex insidewindowex
+setTranslation 5.588 1.797 42.001 insidewindowex
+setLightProbeKind hires insidewindowex
+setLightProbeZone 4.080 2.000 42.120 4.900 2.000 4.180 0.000 13.500 0.000 insidewindowex
+createLightProbe 0.0 1.0 0.0 root probe_deck
+setTranslation 9.347 1.071 41.014 probe_deck
+setLightProbeKind hires probe_deck
+setLightProbeZone 12.400 4.563 39.661 12.787 8.665 4.950 0.000 13.500 0.000 probe_deck
+createLightProbe 0.0 1.0 0.0 root probe_inside_ex1
+setTranslation 5.000 1.370 40.250 probe_inside_ex1
+setLightProbeKind hires probe_inside_ex1
+setLightProbeZone 4.080 1.600 42.120 4.900 2.600 4.180 0.000 13.500 0.000 probe_inside_ex1
+createLightProbe 0.0 1.0 0.0 root probe_inside_ex5
+setTranslation 3.181 1.150 42.722 probe_inside_ex5
+setLightProbeKind hires probe_inside_ex5
+setLightProbeZone 4.080 1.600 42.120 4.900 2.600 4.180 0.000 13.500 0.000 probe_inside_ex5
+createLightProbe 0.0 1.0 0.0 root probe_inside_ex3
+setTranslation 5.535 1.370 42.246 probe_inside_ex3
+setLightProbeKind hires probe_inside_ex3
+setLightProbeZone 4.080 1.600 42.120 4.900 2.600 4.180 0.000 13.500 0.000 probe_inside_ex3
+createLightProbe 0.0 1.0 0.0 root probe_inside_coffeetable
+setTranslation 10.031 1.098 44.200 probe_inside_coffeetable
+setLightProbeKind hires probe_inside_coffeetable
+setLightProbeZone 8.600 1.663 46.061 9.487 2.665 4.850 0.000 13.500 0.000 probe_inside_coffeetable
+createLightProbe 0.0 1.0 0.0 probe_inside_win_patio probe_inside_window
+setTranslation 9.604 1.780 43.741 probe_inside_window
+setLightProbeKind hires probe_inside_window
+setLightProbeZone 8.600 1.663 46.061 9.487 2.665 4.850 0.000 13.500 0.000 probe_inside_window
+createLightProbe 0.0 1.0 0.0 root probe_inside_esp
+setTranslation 10.151 1.599 47.953 probe_inside_esp
+setLightProbeKind hires probe_inside_esp
+createLightProbe 0.0 1.0 0.0 root probe_inside_ex2
+setTranslation 2.227 1.430 40.763 probe_inside_ex2
+setLightProbeKind hires probe_inside_ex2
+setLightProbeZone 4.080 1.600 42.120 4.900 2.600 4.180 0.000 13.500 0.000 probe_inside_ex2
+createLightProbe 0.0 1.0 0.0 root inside_ex_low
+setTranslation 3.222 1.665 41.929 inside_ex_low
+setLightProbeZone 4.080 1.600 42.120 4.900 2.600 4.180 0.000 13.500 0.000 inside_ex_low
+createLightProbe 0.0 1.0 0.0 root probe0
+setTranslation 3.026 1.000 3.670 probe0
+createLightProbe 0.0 1.0 0.0 root probe2
+setTranslation 16.937 1.000 30.148 probe2
+createLightProbe 0.0 1.0 0.0 root probe4
+setTranslation -1.737 1.850 42.927 probe4
+createLightProbe 0.0 1.0 0.0 root probe3
+setTranslation 7.635 2.127 51.302 probe3
+createAddSpotLight 0.400 0.000 0.000 45.0 1.000 mat_Juice_Light
+setAddLightColor 500.000 490.196 370.588 mat_Juice_Light
+setTranslation 6.179 1.579 47.414 mat_Juice_Light
+setRotation -38.401 -3.199 -9.847 mat_Juice_Light
+createAddSpotLight 0.400 0.300 0.030 45.0 1.000 mat_Camera_Light
+setAddLightColor 500.000 490.196 370.588 mat_Camera_Light
+setTranslation 9.783 1.655 46.969 mat_Camera_Light
+setRotation -102.918 -2.742 10.573 mat_Camera_Light
+createLightProbe 0.0 1.0 0.0 TrophyProbe Trophy_Probe
+setTranslation 3.181 1.150 42.722 Trophy_Probe
+setLightProbeZone 4.080 1.600 42.120 4.900 2.600 4.180 0.000 13.500 0.000 Trophy_Probe
+createAddSpotLight 0.700 0.400 0.200 45.0 1.000 Trophy_Light
+setAddLightColor 39843.137 39843.137 39843.137 Trophy_Light
+setTranslation 10.422 2.027 41.061 Trophy_Light
+setRotation -91.078 -0.019 -2.021 Trophy_Light
+loadRunway cafe_runway.bin cafe_runway
+updateGlobalShadows
+swapTexture picture_frame_color1.txs inside
+swapTexture picture_photo_color_bar1.txs inside
+setSyntheticSkyLightingResetThreshold preset_sky 5.0
+loadSchedule Menu_Cafe_CarDemo.evs
+deserialize Menu_Cafe_CarDemo_01.ssb camera effect envptr
+setEffectParameter enableRayTracingSpecular 1
+setEffectParameter rayTracingSpecularType 1
+updateLightProbe
+updateGlobalShadows
+setSyntheticSkyLightingResetThreshold preset_sky 5.0
+cmdps cps_car0
+cmdps cps_car0 loadDefaultDriver 0 false car0 false
+cmdps inDoor
+cmdps layout_0
+cmdps outDoor
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 Detail_DummyTarget
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 Detail_DummyTarget
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 Detail_DummyTarget
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 DummyTarget
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 DummyTarget
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 DummyTarget
+cmdps inDoor setEntityRenderingConfig chalkboard visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 chalkboard
+cmdps layout_0 setEntityRenderingConfig chalkboard visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 chalkboard
+cmdps outDoor setEntityRenderingConfig chalkboard visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 chalkboard
+cmdps inDoor setEntityRenderingConfig flower_vase visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 flower_vase
+cmdps layout_0 setEntityRenderingConfig flower_vase visible=1 world=1 envscene=0 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 flower_vase
+cmdps outDoor setEntityRenderingConfig flower_vase visible=1 world=1 envscene=0 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 flower_vase
+cmdps inDoor setEntityRenderingConfig inside visible=1 world=1 envscene=1 raytrace=1 forcertspecular=1
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 inside
+cmdps layout_0 setEntityRenderingConfig inside visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 inside
+cmdps outDoor setEntityRenderingConfig inside visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 inside
+cmdps inDoor setEntityRenderingConfig right_tree visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 right_tree
+cmdps layout_0 setEntityRenderingConfig right_tree visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 right_tree
+cmdps outDoor setEntityRenderingConfig right_tree visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 right_tree
+cmdps inDoor setEntityRenderingConfig espresso visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 espresso
+cmdps layout_0 setEntityRenderingConfig espresso visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 espresso
+cmdps outDoor setEntityRenderingConfig espresso visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 espresso
+cmdps inDoor setEntityRenderingConfig table_prop_smooth visible=1 world=1 envscene=1 raytrace=1 forcertspecular=1
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 table_prop_smooth
+cmdps layout_0 setEntityRenderingConfig table_prop_smooth visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 table_prop_smooth
+cmdps outDoor setEntityRenderingConfig table_prop_smooth visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 table_prop_smooth
+cmdps inDoor setEntityRenderingConfig branch_morus_hi visible=1 world=0 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 branch_morus_hi
+cmdps layout_0 setEntityRenderingConfig branch_morus_hi visible=1 world=0 envscene=1 raytrace=0 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 branch_morus_hi
+cmdps outDoor setEntityRenderingConfig branch_morus_hi visible=1 world=0 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 branch_morus_hi
+cmdps inDoor setEntityRenderingConfig tree_chestnut visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 tree_chestnut
+cmdps layout_0 setEntityRenderingConfig tree_chestnut visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 tree_chestnut
+cmdps outDoor setEntityRenderingConfig tree_chestnut visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 tree_chestnut
+cmdps inDoor setEntityRenderingConfig weed_a visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 weed_a
+cmdps layout_0 setEntityRenderingConfig weed_a visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 weed_a
+cmdps outDoor setEntityRenderingConfig weed_a visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 weed_a
+cmdps inDoor setEntityRenderingConfig weed_b visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 weed_b
+cmdps layout_0 setEntityRenderingConfig weed_b visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 weed_b
+cmdps outDoor setEntityRenderingConfig weed_b visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 weed_b
+cmdps inDoor setEntityRenderingConfig weed_c visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 weed_c
+cmdps layout_0 setEntityRenderingConfig weed_c visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 weed_c
+cmdps outDoor setEntityRenderingConfig weed_c visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 weed_c
+cmdps inDoor setEntityRenderingConfig rocks visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 rocks
+cmdps layout_0 setEntityRenderingConfig rocks visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 rocks
+cmdps outDoor setEntityRenderingConfig rocks visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 rocks
+cmdps inDoor setEntityRenderingConfig tree visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 tree
+cmdps layout_0 setEntityRenderingConfig tree visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 tree
+cmdps outDoor setEntityRenderingConfig tree visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 tree
+cmdps inDoor setEntityRenderingConfig grass visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 grass
+cmdps layout_0 setEntityRenderingConfig grass visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 grass
+cmdps outDoor setEntityRenderingConfig grass visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 grass
+cmdps inDoor setEntityRenderingConfig env visible=1 world=0 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 env
+cmdps layout_0 setEntityRenderingConfig env visible=1 world=0 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 env
+cmdps outDoor setEntityRenderingConfig env visible=1 world=0 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 env
+cmdps inDoor setEntityRenderingConfig far visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setPosture trs_rot -0.007 1.442 -0.003 0.000 0.000 0.000 far
+cmdps layout_0 setEntityRenderingConfig far visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 far
+cmdps outDoor setEntityRenderingConfig far visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 far
+cmdps inDoor setEntityRenderingConfig Forest_Shadow visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 Forest_Shadow
+cmdps layout_0 setEntityRenderingConfig Forest_Shadow visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 Forest_Shadow
+cmdps outDoor setEntityRenderingConfig Forest_Shadow visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 Forest_Shadow
+cmdps inDoor setEntityRenderingConfig sq_table visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 sq_table
+cmdps layout_0 setEntityRenderingConfig sq_table visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 sq_table
+cmdps outDoor setEntityRenderingConfig sq_table visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 sq_table
+cmdps inDoor setEntityRenderingConfig brunch_hi_stringlights visible=1 world=0 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 brunch_hi_stringlights
+cmdps layout_0 setEntityRenderingConfig brunch_hi_stringlights visible=1 world=0 envscene=1 raytrace=0 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 brunch_hi_stringlights
+cmdps outDoor setEntityRenderingConfig brunch_hi_stringlights visible=1 world=0 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 brunch_hi_stringlights
+cmdps inDoor setEntityRenderingConfig ground_fix visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 ground_fix
+cmdps layout_0 setEntityRenderingConfig ground_fix visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 ground_fix
+cmdps outDoor setEntityRenderingConfig ground_fix visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 ground_fix
+cmdps inDoor setEntityRenderingConfig windows visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 windows
+cmdps layout_0 setEntityRenderingConfig windows visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 windows
+cmdps outDoor setEntityRenderingConfig windows visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 windows
+cmdps inDoor setEntityRenderingConfig facade visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 facade
+cmdps layout_0 setEntityRenderingConfig facade visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 facade
+cmdps outDoor setEntityRenderingConfig facade visible=1 world=1 envscene=1 raytrace=1 forcertspecular=1
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 facade
+cmdps inDoor setEntityRenderingConfig string_lights visible=1 world=1 envscene=0 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 string_lights
+cmdps layout_0 setEntityRenderingConfig string_lights visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 string_lights
+cmdps outDoor setEntityRenderingConfig string_lights visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 string_lights
+cmdps inDoor setEntityRenderingConfig christmas_flower visible=0 world=0 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 christmas_flower
+cmdps layout_0 setEntityRenderingConfig christmas_flower visible=0 world=0 envscene=1 raytrace=0 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 christmas_flower
+cmdps outDoor setEntityRenderingConfig christmas_flower visible=0 world=0 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 christmas_flower
+cmdps inDoor setEntityRenderingConfig lightbulb visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 lightbulb
+cmdps layout_0 setEntityRenderingConfig lightbulb visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 lightbulb
+cmdps outDoor setEntityRenderingConfig lightbulb visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps outDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 lightbulb
+cmdps inDoor setEntityRenderingConfig tree_instance visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps layout_0 setEntityRenderingConfig tree_instance visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps outDoor setEntityRenderingConfig tree_instance visible=1 world=1 envscene=1 raytrace=0 forcertspecular=0
+cmdps inDoor setEntityRenderingConfig Trophy_Model visible=1 world=1 envscene=1 raytrace=1 forcertspecular=0
+cmdps inDoor setPosture trs_rot 0.000 0.000 0.000 0.000 0.000 0.000 Trophy_Model
+cmdps layout_0 setEntityRenderingConfig Trophy_Model visible=1 world=0 envscene=1 raytrace=1 forcertspecular=1
+cmdps layout_0 setPosture trs_rot 12.190 1.241 40.699 0.000 -90.000 0.000 Trophy_Model
+cmdps outDoor setEntityRenderingConfig Trophy_Model visible=1 world=0 envscene=1 raytrace=1 forcertspecular=1
+cmdps outDoor setPosture trs_rot 12.190 1.241 40.699 1.000 0.000 -80.191 Trophy_Model
+cmdps inDoor setPosture trs_rot 10.103 1.462 46.802 0.000 0.000 0.000 drippot_probe
+cmdps layout_0 setPosture trs_rot 10.103 1.462 0.000 0.000 -76.813 0.000 drippot_probe
+cmdps outDoor setPosture trs_rot 10.103 1.462 46.802 0.000 0.000 0.000 drippot_probe
+cmdps inDoor setPosture trs_rot 6.331 1.888 46.334 0.000 0.000 0.000 inside_main_low
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 -76.813 0.000 inside_main_low
+cmdps outDoor setPosture trs_rot 6.331 1.888 46.334 0.000 0.000 0.000 inside_main_low
+cmdps inDoor setPosture trs_rot 14.418 1.631 43.704 0.000 0.000 0.000 probe_outside_glass_ent
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 -76.813 0.000 probe_outside_glass_ent
+cmdps outDoor setPosture trs_rot 14.418 1.631 43.704 0.000 0.000 0.000 probe_outside_glass_ent
+cmdps inDoor setPosture trs_rot 14.900 1.824 44.229 0.000 0.000 0.000 probe_inside_glass_ent
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 0.000 -76.813 0.000 probe_inside_glass_ent
+cmdps outDoor setPosture trs_rot 14.900 1.824 44.229 0.000 0.000 0.000 probe_inside_glass_ent
+cmdps inDoor setPosture trs_rot 3.586 1.808 37.260 0.000 0.000 0.000 probe_outside_win_ex
+cmdps layout_0 setPosture trs_rot 11.076 1.018 42.095 0.000 -76.813 0.000 probe_outside_win_ex
+cmdps outDoor setPosture trs_rot 3.586 1.808 37.260 0.000 0.000 0.000 probe_outside_win_ex
+cmdps inDoor setPosture trs_rot 10.219 1.639 41.205 0.000 0.000 0.000 probe_outside_win_p
+cmdps layout_0 setPosture trs_rot 11.076 1.018 42.095 0.000 -76.813 0.000 probe_outside_win_p
+cmdps outDoor setPosture trs_rot 10.219 1.639 41.205 0.000 0.000 0.000 probe_outside_win_p
+cmdps inDoor setPosture trs_rot 5.588 1.797 42.001 0.000 0.000 0.000 insidewindowex
+cmdps layout_0 setPosture trs_rot 5.588 1.018 42.095 0.000 -76.813 0.000 insidewindowex
+cmdps outDoor setPosture trs_rot 5.588 1.797 42.001 0.000 0.000 0.000 insidewindowex
+cmdps inDoor setPosture trs_rot 9.347 1.071 41.014 0.000 0.000 0.000 probe_deck
+cmdps layout_0 setPosture trs_rot 11.076 1.018 42.095 0.000 -76.813 0.000 probe_deck
+cmdps outDoor setPosture trs_rot 9.347 1.071 41.014 0.000 0.000 0.000 probe_deck
+cmdps inDoor setPosture trs_rot 5.000 1.370 40.250 0.000 0.000 0.000 probe_inside_ex1
+cmdps layout_0 setPosture trs_rot 5.000 1.018 42.095 0.000 -76.813 0.000 probe_inside_ex1
+cmdps outDoor setPosture trs_rot 5.000 1.370 40.250 0.000 0.000 0.000 probe_inside_ex1
+cmdps inDoor setPosture trs_rot 3.181 1.150 42.722 0.000 0.000 0.000 probe_inside_ex5
+cmdps layout_0 setPosture trs_rot 3.181 1.018 42.095 0.000 -76.813 0.000 probe_inside_ex5
+cmdps outDoor setPosture trs_rot 3.181 1.150 42.722 0.000 0.000 0.000 probe_inside_ex5
+cmdps inDoor setPosture trs_rot 5.535 1.370 42.246 0.000 0.000 0.000 probe_inside_ex3
+cmdps layout_0 setPosture trs_rot 5.535 1.018 42.095 0.000 -76.813 0.000 probe_inside_ex3
+cmdps outDoor setPosture trs_rot 5.535 1.370 42.246 0.000 0.000 0.000 probe_inside_ex3
+cmdps inDoor setPosture trs_rot 10.031 1.098 44.200 0.000 0.000 0.000 probe_inside_coffeetable
+cmdps layout_0 setPosture trs_rot 10.031 1.018 42.095 0.000 -76.813 0.000 probe_inside_coffeetable
+cmdps outDoor setPosture trs_rot 10.031 1.098 44.200 0.000 0.000 0.000 probe_inside_coffeetable
+cmdps inDoor setPosture trs_rot 9.604 1.780 43.741 0.000 0.000 0.000 probe_inside_window
+cmdps layout_0 setPosture trs_rot 11.076 1.018 42.095 0.000 -76.813 0.000 probe_inside_window
+cmdps outDoor setPosture trs_rot 9.604 1.780 43.741 0.000 0.000 0.000 probe_inside_window
+cmdps inDoor setPosture trs_rot 10.151 1.599 47.953 0.000 0.000 0.000 probe_inside_esp
+cmdps layout_0 setPosture trs_rot 10.151 1.018 42.095 0.000 -76.813 0.000 probe_inside_esp
+cmdps outDoor setPosture trs_rot 10.151 1.599 47.953 0.000 0.000 0.000 probe_inside_esp
+cmdps inDoor setPosture trs_rot 2.227 1.430 40.763 0.000 0.000 0.000 probe_inside_ex2
+cmdps layout_0 setPosture trs_rot 2.227 1.430 40.763 0.000 -76.813 0.000 probe_inside_ex2
+cmdps outDoor setPosture trs_rot 2.227 1.430 40.763 0.000 0.000 0.000 probe_inside_ex2
+cmdps inDoor setPosture trs_rot 3.222 1.665 41.929 0.000 0.000 0.000 inside_ex_low
+cmdps layout_0 setPosture trs_rot 3.222 1.018 42.095 0.000 -76.813 0.000 inside_ex_low
+cmdps outDoor setPosture trs_rot 3.222 1.665 41.929 0.000 0.000 0.000 inside_ex_low
+cmdps inDoor setPosture trs_rot 3.026 1.000 3.670 0.000 0.000 0.000 probe0
+cmdps layout_0 setPosture trs_rot 3.026 0.000 0.000 0.000 0.000 0.000 probe0
+cmdps outDoor setPosture trs_rot 3.026 1.000 3.670 0.000 0.000 0.000 probe0
+cmdps inDoor setPosture trs_rot 16.937 1.000 30.148 0.000 0.000 0.000 probe2
+cmdps layout_0 setPosture trs_rot 16.937 0.000 0.000 0.000 0.000 0.000 probe2
+cmdps outDoor setPosture trs_rot 16.937 1.000 30.148 0.000 0.000 0.000 probe2
+cmdps inDoor setPosture trs_rot -1.737 1.850 42.927 0.000 0.000 0.000 probe4
+cmdps layout_0 setPosture trs_rot -1.737 0.000 0.000 0.000 0.000 0.000 probe4
+cmdps outDoor setPosture trs_rot -1.737 1.850 42.927 0.000 0.000 0.000 probe4
+cmdps inDoor setPosture trs_rot 7.635 2.127 51.302 0.000 0.000 0.000 probe3
+cmdps layout_0 setPosture trs_rot 7.635 0.000 0.000 0.000 0.000 0.000 probe3
+cmdps outDoor setPosture trs_rot 7.635 2.127 51.302 0.000 0.000 0.000 probe3
+cmdps inDoor setVisible true mat_Juice_Light
+cmdps inDoor setPosture trs_rot 6.179 1.579 47.414 -38.401 -3.199 -9.847 mat_Juice_Light
+cmdps layout_0 setVisible true mat_Juice_Light
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 -71.000 0.000 0.000 mat_Juice_Light
+cmdps outDoor setVisible true mat_Juice_Light
+cmdps outDoor setPosture trs_rot 6.179 1.579 47.414 -38.401 -3.199 -9.847 mat_Juice_Light
+cmdps inDoor setVisible true mat_Camera_Light
+cmdps inDoor setPosture trs_rot 9.783 1.655 46.969 -102.918 -2.742 10.573 mat_Camera_Light
+cmdps layout_0 setVisible true mat_Camera_Light
+cmdps layout_0 setPosture trs_rot 0.000 0.000 0.000 -71.000 0.000 0.000 mat_Camera_Light
+cmdps outDoor setVisible true mat_Camera_Light
+cmdps outDoor setPosture trs_rot 9.783 1.655 46.969 -102.918 -2.742 10.573 mat_Camera_Light
+cmdps inDoor setPosture trs_rot 3.181 1.150 42.722 0.000 0.000 0.000 Trophy_Probe
+cmdps layout_0 setPosture trs_rot 3.181 1.018 42.095 0.000 -76.813 0.000 Trophy_Probe
+cmdps outDoor setPosture trs_rot 3.181 1.150 42.722 0.000 0.000 0.000 Trophy_Probe
